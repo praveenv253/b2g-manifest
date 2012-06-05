@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-	Project Xeno: B2G on Ideos
-	Collaborators:
-	Praveen Venkatesh		<praveenv253@gmail.com>
-	S R V Vishwanath		<vishwa.hyd@gmail.com>
-	Vivek Kumar Bagaria		<vivekee047@gmail.com>
+<!--Project Xeno: B2G on Ideos						-->
+<!--Collaborators:									-->
+<!--Praveen Venkatesh		<praveenv253@gmail.com>	-->
+<!--S R V Vishwanath		<vishwa.hyd@gmail.com>	-->
+<!--Vivek Kumar Bagaria		<vivekee047@gmail.com>	-->
 	
-	Warning: This project is in experimental stage. Donot try to use it as of now
--->
+<!--Warning: This project is in experimental stage. Donot try to use it as of now-->
 <manifest>
   
   <remote  name="aosp"
@@ -118,5 +116,6 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cyanogen" revision="gingerbread" />
   <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
+  <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="gingerbread">
  
 </manifest>
