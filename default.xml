@@ -10,7 +10,7 @@
   <remote name="alanorth"
  		  fetch="https://github.com/alanorth/" />
   <remote name="psyke83"
-  		  fetch="https://github.com/psyke83/proprietary_vendor_huawei.git" />
+  		  fetch="https://github.com/psyke83/" />
 
   <default revision="gingerbread"
            remote="aosp"
