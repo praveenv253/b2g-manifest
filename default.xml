@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+  
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
   <remote name="b2g"
           fetch="git://github.com/mozilla-b2g/" />
-  <default revision="master"
+  <remote name="cyanogen"
+		  fetch="https://github.com/CyanogenMod/" />
+  <remote name="alanorth"
+ 		  fetch="https://github.com/alanorth/" />
+
+  <default revision="refs/tags/android-4.0.4_r1.2"
            remote="aosp"
            sync-j="4" />
+ 
 
   <!-- Gonk specific things and forks -->
   <project path="build" name="platform_build" remote="b2g" revision="master">
@@ -38,7 +44,7 @@
   <project path="external/flac" name="platform/external/flac" />
   <project path="external/freetype" name="platform/external/freetype" />
   <project path="external/giflib" name="platform/external/giflib" />
-  <project path="external/gtest" name="platform/external/gtest" />
+  <project path="external/gtest" name="platform/external/gtest" remote="aosp" revision="master" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
   <project path="external/icu4c" name="platform/external/icu4c" />
   <project path="external/jhead" name="platform/external/jhead" />
@@ -83,14 +89,10 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
-  <!-- Emulator specific things -->
-  <project path="development" name="platform/development" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" />
-  <project path="external/qemu" name="platform/external/qemu" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" />
-  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
-  <project path="sdk" name="platform/sdk" />
-
+  <!-- IDEOS things -->
+  <project path="device/huawei/ideos" name="android_device_huawei_u8150" remote="cyanogen" revision="gingerbread" />
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cyanogen" revision="gingerbread" />
+  <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
+ 
 </manifest>
