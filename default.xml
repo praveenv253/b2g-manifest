@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Project Xeno: B2G on Ideos						-->
-<!--Collaborators:									-->
-<!--Praveen Venkatesh		<praveenv253@gmail.com>	-->
-<!--S R V Vishwanath		<vishwa.hyd@gmail.com>	-->
-<!--Vivek Kumar Bagaria		<vivekee047@gmail.com>	-->
-	
-<!--Warning: This project is in experimental stage. Donot try to use it as of now-->
 <manifest>
   
   <remote  name="aosp"
@@ -16,6 +9,8 @@
 		  fetch="https://github.com/CyanogenMod/" />
   <remote name="alanorth"
  		  fetch="https://github.com/alanorth/" />
+  <remote name="psyke83"
+  		  fetch="https://github.com/psyke83/proprietary_vendor_huawei.git" />
 
   <default revision="gingerbread"
            remote="aosp"
@@ -116,6 +111,7 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cyanogen" revision="gingerbread" />
   <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
-  <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="gingerbread">
+  <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="gingerbread" />
+  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="psyke83" revision="gingerbread" />
  
 </manifest>
