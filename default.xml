@@ -14,13 +14,13 @@
   <remote name="vivek"
   		  fetch="https://github.com/vivekkuamrbagaria"/>
 
-  <default revision="gingerbread"
+  <default revision="master"
            remote="aosp"
            sync-j="4" />
  
 
   <!-- Gonk specific things and forks -->
-  <project path="build" name="platform_build" remote="vivek" revision="gingerbread">
+  <project path="build" name="platform_build" remote="vivek" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
@@ -28,25 +28,10 @@
   <project path="gecko" name="mozilla-central" remote="b2g" revision="master" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
-  <project path="hardware/ril" name="platform_hardware_ril" remote="b2g" revision="gingerbread"/>
+  <project path="hardware/ril" name="platform_hardware_ril" remote="b2g" revision="master"/>
 
-  <!-- Stock Android things -->
-  <!-- The following dont seem to have gingerbread branch-->
-  <!-- 1. abi/cpp-->
-  <!-- 2. external/flac-->
-  <!-- 3. external/harfbuxx-->
-  <!-- 4. external/liblzf-->
-  <!-- 5. external/libnl-headers-->
-  <!-- 6. external/libphonenumber-->
-  <!-- 7. external/mksh-->
-  <!-- 8. external/tinyalsa-->
-  <!-- 9. external/webp-->
-  <!-- 10. external/webrtc-->
-  <!-- 11. external/wpa_supplicant_8-->
-  <!-- 12. frameworks/support-->
-  <!-- We will use the master branch itself-->
-  
-  <project path="abi/cpp" name="platform/abi/cpp" revision="master"/>
+  <!--Stock Android things-->  
+  <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="device/common" name="device/common" />
@@ -60,22 +45,22 @@
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
   <project path="external/expat" name="platform/external/expat" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
-  <project path="external/flac" name="platform/external/flac" revision="master" />
+  <project path="external/flac" name="platform/external/flac" />
   <project path="external/freetype" name="platform/external/freetype" />
   <project path="external/giflib" name="platform/external/giflib" />
   <project path="external/gtest" name="platform/external/gtest" />
-  <project path="external/harfbuzz" name="platform/external/harfbuzz" revision="master" />
+  <project path="external/harfbuzz" name="platform/external/harfbuzz" />
   <project path="external/icu4c" name="platform/external/icu4c" />
   <project path="external/jhead" name="platform/external/jhead" />
   <project path="external/jpeg" name="platform/external/jpeg" />
   <project path="external/libgsm" name="platform/external/libgsm" />
-  <project path="external/liblzf" name="platform/external/liblzf" revision="master"/>
+  <project path="external/liblzf" name="platform/external/liblzf" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
-  <project path="external/libnl-headers" name="platform/external/libnl-headers" revision="master" />
-  <project path="external/libphonenumber" name="platform/external/libphonenumber" revision="master"/>
+  <project path="external/libnl-headers" name="platform/external/libnl-headers" />
+  <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/libpng" name="platform/external/libpng" />
   <project path="external/libvpx" name="platform/external/libvpx" />
-  <project path="external/mksh" name="platform/external/mksh" revision="master"/>
+  <project path="external/mksh" name="platform/external/mksh" />
   <project path="external/openssl" name="platform/external/openssl" />
   <project path="external/protobuf" name="platform/external/protobuf" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
@@ -85,17 +70,17 @@
   <project path="external/sqlite" name="platform/external/sqlite" />
   <project path="external/stlport" name="platform/external/stlport" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" revision="master" />
+  <project path="external/tinyalsa" name="platform/external/tinyalsa"  />
   <project path="external/tremolo" name="platform/external/tremolo" />
-  <project path="external/webp" name="platform/external/webp" revision="master" />
-  <project path="external/webrtc" name="platform/external/webrtc" revision="master"/>
+  <project path="external/webp" name="platform/external/webp" />
+  <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" revision="master"/>
+  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="frameworks/support" name="platform/frameworks/support" revision="master"/>
+  <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
   <project path="libcore" name="platform/libcore" />
@@ -109,11 +94,11 @@
   <project path="system/vold" name="platform/system/vold" />
 
   <!-- IDEOS things -->
-  <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="cyanogen" revision="gingerbread" />
+  <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="cyanogen" revision="master" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
-  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cyanogen" revision="gingerbread" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cyanogen" revision="master" />
   <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
-  <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="gingerbread" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="psyke83" revision="gingerbread" />
+  <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="master" />
+  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="psyke83" revision="master" />
  
 </manifest>
