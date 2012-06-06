@@ -16,7 +16,7 @@
   <remote name="coldfusionx"
 		  fetch="https://github.com/ColdFusionX/" />
 
-  <default revision="master"
+  <default revision="refs/tags/android-4.0.4_r1.2"
            remote="aosp"
            sync-j="4" />
  
@@ -98,9 +98,9 @@
   <!-- IDEOS things -->
   <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="coldfusionx" revision="ics" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
-  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cyanogen" revision="master" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cyanogen" revision="ics" />
   <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
-  <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="master" />
+  <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="ics" />
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="psyke83" revision="master" />
  
 </manifest>
