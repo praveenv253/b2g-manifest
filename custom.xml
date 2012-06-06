@@ -7,6 +7,9 @@
           fetch="git://github.com/mozilla-b2g/" />
   <remote name="praveenv253"
           fetch="git@github.com:praveenv253/" />
+  <remote name="vivek"
+  		  fetch="https://github.com/vivekkuamrbagaria"/>
+  
   <default revision="master"
            remote="aosp"
            sync-j="4" />
@@ -15,7 +18,7 @@
   <project path="misc" name="misc" remote="praveenv253" revision="master" />
 
   <!-- Gonk specific things and forks -->
-  <project path="build" name="platform_build" remote="b2g" revision="master">
+  <project path="build" name="platform_build" remote="vivek" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
