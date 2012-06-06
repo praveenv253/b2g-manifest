@@ -11,6 +11,8 @@
  		  fetch="https://github.com/alanorth/" />
   <remote name="psyke83"
   		  fetch="https://github.com/psyke83/" />
+  <remote name="vivek"
+  		  fetch="https://github.com/vivekkuamrbagaria"/>
 
   <default revision="gingerbread"
            remote="aosp"
@@ -18,7 +20,7 @@
  
 
   <!-- Gonk specific things and forks -->
-  <project path="build" name="platform_build" remote="b2g" revision="gingerbread">
+  <project path="build" name="platform_build" remote="vivek" revision="gingerbread">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
