@@ -14,13 +14,13 @@
   <remote name="vivek"
   		  fetch="https://github.com/vivekkuamrbagaria"/>
   <remote name="coldfusionx"
-		  fetch="https://github.com/ColdFusionX/android_device_huawei_u8150.git" />
+		  fetch="https://github.com/ColdFusionX/" />
 
   <default revision="master"
            remote="aosp"
            sync-j="4" />
  
-
+  <!-- Only ICS works-->
   <!-- Gonk specific things and forks -->
   <project path="build" name="platform_build" remote="vivek" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
