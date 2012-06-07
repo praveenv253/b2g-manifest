@@ -84,7 +84,7 @@
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
-  <project path="hardware/ril" name="platform_hardware_ril" />
+  <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="prebuilt" name="platform/prebuilt" />
