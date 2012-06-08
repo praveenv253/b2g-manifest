@@ -12,7 +12,7 @@
   <remote name="psyke83"
   		  fetch="https://github.com/psyke83/" />
   <remote name="vivek"
-  		  fetch="https://github.com/vivekkuamrbagaria" />
+  		  fetch="git@github.com:vivekkuamrbagaria" />
   <remote name="coldfusionx"
 		  fetch="https://github.com/ColdFusionX/" />
 
