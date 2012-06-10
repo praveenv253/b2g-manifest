@@ -13,10 +13,8 @@
   		  fetch="https://github.com/psyke83/" />
   <remote name="vivek"
   		  fetch="https://github.com/vivekkuamrbagaria/"/>
-
   <remote name="coldfusionx"
 		  fetch="https://github.com/ColdFusionX/" />
-
   <default revision="refs/tags/android-4.0.4_r1.2"
            remote="aosp"
            sync-j="4" />
@@ -31,7 +29,7 @@
   <project path="gecko" name="mozilla-central" remote="b2g" revision="master" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
-  <project path="external/webrtc" name="platform/external/webrtc" remote="vivek" revision="master" />
+  <project path="external/webrtc" name="platform/external/webrtc" remote="vivek" revision="ideos" />
   <!--Stock Android things-->  
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="platform/bionic" />
