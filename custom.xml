@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
+
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
   <remote name="b2g"
           fetch="git://github.com/mozilla-b2g/" />
-  <remote name="cyanogen"
-		  fetch="https://github.com/CyanogenMod/" />
-  <remote name="alanorth"
- 		  fetch="https://github.com/alanorth/" />
-  <remote name="psyke83"
-  		  fetch="https://github.com/psyke83/" />
+  <remote name="praveenv253"
+          fetch="git@github.com:praveenv253/" />
   <remote name="vivek"
-  		  fetch="https://github.com/vivekkuamrbagaria/"/>
-  <remote name="coldfusionx"
-		  fetch="https://github.com/ColdFusionX/" />
-
-  <default revision="refs/tags/android-4.0.4_r1.2"
+  		  fetch="https://github.com/vivekkuamrbagaria"/>
+  
+  <default revision="master"
            remote="aosp"
            sync-j="4" />
- 
-  <!-- Only ICS works-->
+
+  <!-- Testing pull from a different repo -->
+  <project path="misc" name="misc" remote="praveenv253" revision="master" />
+
   <!-- Gonk specific things and forks -->
-  <project path="build" name="platform_build" remote="vivek" revision="xeno">
+  <project path="build" name="platform_build" remote="vivek" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
@@ -30,8 +26,9 @@
   <project path="gecko" name="mozilla-central" remote="b2g" revision="master" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
-  <project path="external/webrtc" name="platform/external/webrtc" remote="vivek" revision="master" />
-  <!--Stock Android things-->  
+  <project path="hardware/ril" name="platform_hardware_ril" remote="b2g" revision="master"/>
+
+  <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
@@ -71,9 +68,10 @@
   <project path="external/sqlite" name="platform/external/sqlite" />
   <project path="external/stlport" name="platform/external/stlport" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa"  />
+  <project path="external/tinyalsa" name="platform/external/tinyalsa" />
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/webp" name="platform/external/webp" />
+  <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/zlib" name="platform/external/zlib" />
@@ -83,7 +81,6 @@
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
-  <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="prebuilt" name="platform/prebuilt" />
@@ -94,12 +91,14 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
-  <!-- IDEOS things -->
-  <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="vivek" revision="xeno" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
-  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cyanogen" revision="ics" />
-  <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
-  <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="ics" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="psyke83" revision="master" />
- 
+  <!-- Emulator specific things -->
+  <project path="development" name="platform/development" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" />
+  <project path="external/qemu" name="platform/external/qemu" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" />
+  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
+  <project path="sdk" name="platform/sdk" />
+
 </manifest>
