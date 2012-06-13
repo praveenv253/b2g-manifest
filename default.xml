@@ -7,6 +7,8 @@
           fetch="git://github.com/mozilla-b2g/" />
   <remote name="kalady"
           fetch="https://github.com/vivekkalady/" />
+  <remote name="cyanogen"
+          fetch="https://github.com/cyanogenmod/" />
   <default revision="refs/tags/android-4.0.4_r1.2"
            remote="aosp"
            sync-j="4" />
@@ -88,5 +90,6 @@
   <!-- Galaxy Y things -->
   <project path="device/samsung/galaxys2" name="device_samsung_totoro" remote="kalady" revision="master" />
   <project path="vendor/samsung/totoro" name="vendor_samsung_totoro" remote="kalady" revision="master" />
+  <project path="vendor/cyanogen" name="android_vendor_cyanogen" remote="cyanogen" revision="master" />
 
 </manifest>
