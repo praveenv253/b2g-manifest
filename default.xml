@@ -5,6 +5,8 @@
            fetch="https://android.googlesource.com/" />
   <remote name="b2g"
           fetch="git://github.com/mozilla-b2g/" />
+  <remote name="kalady"
+          fetch="https://github.com/vivekkalady/" />
   <default revision="refs/tags/android-4.0.4_r1.2"
            remote="aosp"
            sync-j="4" />
@@ -83,8 +85,8 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
-  <!-- Galaxy S2 things -->
-  <project path="device/samsung/galaxys2" name="android-device-galaxys2" remote="b2g" revision="master" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
+  <!-- Galaxy Y things -->
+  <project path="device/samsung/galaxys2" name="device_samsung_totoro" remote="kalady" revision="master" />
+  <project path="vendor/samsung/totoro" name="vendor_samsung_totoro" remote="kalady" revision="master" />
 
 </manifest>
