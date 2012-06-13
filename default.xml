@@ -90,6 +90,5 @@
   <!-- Galaxy Y things -->
   <project path="device/samsung/galaxys2" name="device_samsung_totoro" remote="kalady" revision="master" />
   <project path="vendor/samsung/totoro" name="vendor_samsung_totoro" remote="kalady" revision="master" />
-  <project path="vendor/cyanogen" name="android_vendor_cyanogen" remote="cyanogen" revision="master" />
 
 </manifest>
