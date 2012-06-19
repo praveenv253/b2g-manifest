@@ -90,7 +90,7 @@
   <project path="system/vold" name="platform/system/vold" />
 
   <!-- Galaxy Y things -->
-  <project path="device/samsung/totoro" name="device_samsung_totoro" remote="vivek" revision="totoro" />
+  <project path="device/samsung/totoro" name="device_samsung_totoro" remote="vivek" revision="master" />
   <project path="vendor/samsung/totoro" name="vendor_samsung_totoro" remote="kalady" revision="master" />
 
 </manifest>
