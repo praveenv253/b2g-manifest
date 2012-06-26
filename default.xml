@@ -21,7 +21,7 @@
  
   <!-- Only ICS works-->
   <!-- Gonk specific things and forks -->
-  <project path="build" name="platform_build" remote="vivek" revision="xeno">
+  <project path="build" name="platform_build" remote="vivek" revision="ideos">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
