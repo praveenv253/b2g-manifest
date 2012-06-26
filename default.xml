@@ -94,7 +94,7 @@
   <project path="system/vold" name="platform/system/vold" />
 
   <!-- IDEOS things -->
-  <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="vivek" revision="ideos" />
+  <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="vivek" revision="ideos_test" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
   <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="ics" />
