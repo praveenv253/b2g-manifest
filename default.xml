@@ -12,7 +12,7 @@
   <remote name="psyke83"
   		  fetch="https://github.com/psyke83/" />
   <remote name="vivek"
-  		  fetch="https://github.com/vivekkuamrbagaria/"/>
+  		  fetch="ssh://git@github.com/vivekkuamrbagaria/"/>
   <remote name="coldfusionx"
 		  fetch="https://github.com/ColdFusionX/" />
   <default revision="refs/tags/android-4.0.4_r1.2"
