@@ -27,8 +27,8 @@
   <project path="gecko" name="mozilla-central" remote="b2g" revision="master" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
-  <project path="external/webrtc" name="webrtc" remote="vivek" revision="ideos" />
   <!--Stock Android things-->  
+  <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
