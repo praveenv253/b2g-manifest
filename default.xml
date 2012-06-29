@@ -9,8 +9,6 @@
 		  fetch="https://github.com/CyanogenMod/" />
   <remote name="alanorth"
  		  fetch="https://github.com/alanorth/" />
-  <remote name="psyke83"
-  		  fetch="https://github.com/psyke83/" />
   <remote name="vivek"
   		  fetch="https://github.com/vivekkuamrbagaria/"/>
   <remote name="coldfusionx"
@@ -93,11 +91,10 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
-  <!-- IDEOS things -->
-  <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="vivek" revision="ideos" />
+  <!-- HTC Explorer Stuff -->
+  <project path="device/htc/explorer" name="android_device_htc_pico" remote="vivek" revision="master" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
-  <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
   <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="ics" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="psyke83" revision="master" />
+  <project path="vendor/htc" name="proprietary_vendor_htc_pico" remote="vivek" revision="master" />
  
 </manifest>
