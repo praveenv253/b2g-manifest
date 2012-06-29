@@ -93,6 +93,7 @@
 
   <!-- HTC Explorer Stuff -->
   <project path="device/htc/explorer" name="android_device_htc_pico" remote="vivek" revision="master" />
+  <project path="device/htc/common" name="android_device_htc_msm7x30-common" remote="cyanogen" revision="ics"/>
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="ics" />
   <project path="vendor/htc" name="proprietary_vendor_htc_pico" remote="vivek" revision="master" />
