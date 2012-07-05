@@ -13,6 +13,8 @@
   		  fetch="https://github.com/vivekkuamrbagaria/"/>
   <remote name="coldfusionx"
 		  fetch="https://github.com/ColdFusionX/" />
+  <remote name="Evervolv"
+		  fetch="https://github.com/Evervolv/" />
   <default revision="refs/tags/android-4.0.4_r1.2"
            remote="aosp"
            sync-j="4" />
@@ -93,7 +95,8 @@
 
   <!-- HTC Explorer Stuff -->
   <project path="device/htc/explorer" name="android_device_htc_pico" remote="vivek" revision="master" />
-  <project path="device/htc/common" name="android_device_htc_msm7x30-common" remote="cyanogen" revision="ics"/>
+  <project path="device/htc/msm7x27-common" name="android_device_htc_msm7x30-common" remote="cyanogen" revision="ics"/>
+  <project path="device/htc/common" name="android_device_htc_common" remote="Evervolv" revision = "ics"/>
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="ics" />
   <project path="vendor/htc" name="proprietary_vendor_htc_pico" remote="vivek" revision="master" />
