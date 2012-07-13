@@ -7,12 +7,14 @@
           fetch="git://github.com/mozilla-b2g/" />
   <remote name="cyanogen"
 		  fetch="https://github.com/CyanogenMod/" />
-  <remote name="alanorth"
- 		  fetch="https://github.com/alanorth/" />
+  <remote name="cfx"
+ 		  fetch="https://github.com/CommonFusionX/" />
   <remote name="psyke83"
   		  fetch="https://github.com/psyke83/" />
   <remote name="vivek"
   		  fetch="ssh://git@github.com/vivekkuamrbagaria/"/>
+  <remote name="vishwa"
+                  fetch="ssh://git@github.com/vishwa91/" />
   <remote name="coldfusionx"
 		  fetch="https://github.com/ColdFusionX/" />
   <default revision="refs/tags/android-4.0.4_r1.2"
@@ -27,7 +29,7 @@
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
   <project path="gaia" name="gaia" remote="b2g" revision="master" />
   <project path="gecko" name="mozilla-central" remote="b2g" revision="master" />
-  <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
+  <project path="gonk-misc" name="gonk-misc" remote="vishwa" revision="master" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
   <project path="external/webrtc" name="webrtc" remote="vivek" revision="ideos" />
   <!--Stock Android things-->  
@@ -94,9 +96,9 @@
   <project path="system/vold" name="platform/system/vold" />
 
   <!-- IDEOS things -->
-  <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="vivek" revision="ideos_test" />
+  <project path="device/huawei/u8150" name="android_device_huawei_u8150" remote="vivek" revision="ideos" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
-  <project path="kernel" name="kernel_huawei_u8160" remote="alanorth" revision="cm7" />
+  <project path="kernel" name="kernel_huawei_u8160" remote="cfx" revision="ics" />
   <project path="external/svox" name="android_external_svox" remote="cyanogen" revision="ics" />
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="psyke83" revision="master" />
  
